@@ -1,16 +1,30 @@
 import './Listitem1.css'
 
-function Listitem1() {
+function Listitem1(props) {
 
 
     return (
         <>
-          
+
             <div class="list-item">
-                <img src="https://cdn.futura-sciences.com/cdn-cgi/image/width=1920,quality=60,format=auto/sources/AdobeStock_314829332.jpeg" alt="Créativité" />
+                <img src={props.lien} alt="céativité" />
                 <div>
-                    <h3>Je peux y être créatif !</h3>
-                    <p>Le développement web me permet d'explorer ma créativité en concevant des interfaces uniques et interactives.</p>
+                    <h3>{props.titre}</h3>
+                    <p>{props.paragraphe}</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src={props.lien2} alt="Utilité" />
+                <div>
+                    <h3>{props.titre2}</h3>
+                    <p>{props.paragraphe2}</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src={props.lien3} alt="Technologie évolutive" />
+                <div>
+                    <h3>{props.titre3}</h3>
+                    <p>{props.paragraphe3}</p>
                 </div>
             </div>
 
